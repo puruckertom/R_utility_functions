@@ -16,6 +16,16 @@ print((.packages()))
 #change options?
 #options(chmhelp=FALSE, htmlhelp=TRUE)
 
+#install needed packages if not previously installed
+print("installed packages:")
+print(rownames(installed.packages()))
+if("opencpu" %in% rownames(installed.packages()) == FALSE) {install.packages("opencpu")}
+if("dplyr" %in% rownames(installed.packages()) == FALSE) {install.packages("dplyr")}
+if("plyr" %in% rownames(installed.packages()) == FALSE) {install.packages("plyr")}
+if("knitr" %in% rownames(installed.packages()) == FALSE) {install.packages("knitr")}
+if("rmarkdown" %in% rownames(installed.packages()) == FALSE) {install.packages("rmarkdown")}
+if("httr" %in% rownames(installed.packages()) == FALSE) {install.packages("httr")}
+
 #install support libraries
 library(rmarkdown, quietly = TRUE, warn.conflicts = FALSE)
 library(dplyr, quietly = TRUE, warn.conflicts = FALSE)
