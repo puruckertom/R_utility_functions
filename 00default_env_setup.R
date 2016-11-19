@@ -26,7 +26,7 @@ if("knitr" %in% rownames(installed.packages()) == FALSE) {install.packages("knit
 if("rmarkdown" %in% rownames(installed.packages()) == FALSE) {install.packages("rmarkdown")}
 if("httr" %in% rownames(installed.packages()) == FALSE) {install.packages("httr")}
 
-#install support libraries
+#load support libraries
 library(rmarkdown, quietly = TRUE, warn.conflicts = FALSE)
 library(dplyr, quietly = TRUE, warn.conflicts = FALSE)
 library(knitr, quietly = TRUE, warn.conflicts = FALSE)
